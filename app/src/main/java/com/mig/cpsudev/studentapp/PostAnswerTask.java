@@ -43,7 +43,7 @@ public class PostAnswerTask extends AsyncTask<String, Void, String> {
             HttpPost httpPost = new HttpPost(url);
 
             JSONObject jsonObject = new JSONObject();
-            jsonObject.accumulate("answer", mAnswer);
+            jsonObject.accumulate("choice", mAnswer);
             //jsonObject.accumulate("place_id", checkPoint.getPlace_id());
 
             String json = jsonObject.toString();
